@@ -6,7 +6,7 @@ namespace App\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class RouteControllerTest extends WebTestCase
+class ShortestRouteToDestinationTest extends WebTestCase
 {
     public function testRouteBetweenTwoClosingCountries(): void
     {
