@@ -10,14 +10,14 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class RouteController extends AbstractController
+#[Route('/route/{origin}/{destination}')]
+class RouteToDestination extends AbstractController
 {
     public function __construct(private readonly CountryRouter $countryRouter)
     {
     }
 
-    #[Route('/route/{origin}/{destination}', name: 'app_route')]
-    public function index(string $origin, string $destination): Response
+    public function __invoke(string $origin, string $destination): Response
     {
         $route = $this->countryRouter->route($origin, $destination);
         if (null === $route) {
