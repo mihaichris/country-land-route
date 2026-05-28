@@ -16,7 +16,7 @@
         "symfony/twig-bundle": "6.3.*",
         "symfony/ux-live-component": "^2.13",
         "symfony/ux-twig-component": "*",
-        "symfony/yaml": "6.3.*"
+        "symfony/yaml": "6.4.*"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
